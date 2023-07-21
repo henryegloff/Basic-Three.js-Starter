@@ -6,7 +6,7 @@ import { Reflector } from 'three/examples/jsm/objects/Reflector.js'
 import lights from './_modules/lights.js';
 
 
-
+//import Stats from 'three/examples/jsm/libs/stats.module.js'
 
 
 
@@ -40,6 +40,10 @@ controls.enablePan = true;
 controls.listenToKeyEvents( window )
   
 
+// const stats = new Stats()
+// document.body.appendChild( stats.dom )
+
+
 lights(scene); // Example module
 
 
@@ -71,6 +75,7 @@ function animate() {
     cube.rotation.x += 0.01;
     cube.rotation.y += 0.01;
     renderer.render( scene, camera );
+    //stats.update()
 }
 
 animate();

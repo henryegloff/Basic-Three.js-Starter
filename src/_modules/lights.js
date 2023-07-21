@@ -14,8 +14,8 @@ export default function lights(scene) {
     directional_light.castShadow = true
 
     const shadow_camera_length = 20;
-    directional_light.shadow.mapSize.width = 2048
-    directional_light.shadow.mapSize.height = 2048
+    directional_light.shadow.mapSize.width = 4096
+    directional_light.shadow.mapSize.height = 4096
     directional_light.shadow.radius = 5
     directional_light.shadow.bias = - 0.00006
     directional_light.shadow.camera.near = 1
@@ -27,12 +27,6 @@ export default function lights(scene) {
 
     scene.add( directional_light )
 
-
-    // Helpers
-
-    const gridHelper = new THREE.GridHelper(20, 20, 0xffffff, 0xffffff)
-    scene.add(gridHelper)
-
     // const hemisphere_light_helper = new THREE.HemisphereLightHelper( hemisphere_light, 5 )
     // scene.add( hemisphere_light_helper )
 
@@ -41,7 +35,6 @@ export default function lights(scene) {
 
     // const directional_light_shadow_helper = new THREE.CameraHelper(directional_light.shadow.camera)
     // scene.add(directional_light_shadow_helper)
-
 
 }
 

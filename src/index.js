@@ -53,6 +53,9 @@ scene.add(gridHelper)
 
 const material_1 = new THREE.MeshStandardMaterial( { color: 0xffffff } );
 
+const material_2 = new THREE.MeshStandardMaterial( { color: 0x777777 } );
+
+
 
 const cube = new THREE.Mesh(new THREE.BoxGeometry( 1, 1, 1 ), material_1 );
 cube.castShadow = true;
@@ -60,7 +63,7 @@ cube.position.y = 1;
 scene.add( cube );
 
 
-const ground_plane = new THREE.Mesh( new THREE.PlaneGeometry( 10, 10 ), material_1 );
+const ground_plane = new THREE.Mesh( new THREE.PlaneGeometry( 10, 10 ), material_2 );
 ground_plane.receiveShadow = true;
 ground_plane.rotateX(-Math.PI / 2);
 ground_plane.position.y = -0.01;

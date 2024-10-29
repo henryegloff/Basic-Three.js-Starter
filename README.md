@@ -1,6 +1,10 @@
-# Three.js PWA Template
-Just a basic Three.js PWA template compiled with Vite.
+# Three.js Starter Template
+This is just a basic Three.js starter template.
 
-Please note, I have recently updated this template to use Vite rather than Webpack, and I haven't yet got around to updating the notes on my website about this.
+Recently I decided to switch this from Webpack to Vite, mostly because there was a security issue in one of the previous package dependencies.
 
-Demo: [https://three-js-basic-pwa-template.vercel.app/](https://three-js-basic-pwa-template.vercel.app/)
+So currently this repo is a copy of my Three.js PWA template.
+
+At some point in the future I will hopefully update this starter template to include more of the components that I would commonly use in my Three.js projects such as enviroment images etc.
+
+Demo: [https://basic-three-js-starter.vercel.app/](https://basic-three-js-starter.vercel.app/)
